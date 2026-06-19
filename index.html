@@ -178,34 +178,94 @@ font-size:28px;
 text-decoration:none;
 }
 
-@media(max-width:768px){
+/* MOBILE FIX OVERRIDE */
+@media screen and (max-width:768px){
 
 header{
-flex-direction:column;
+flex-direction:column !important;
+padding:10px !important;
+}
+
+.logo{
+height:45px !important;
+margin-bottom:10px !important;
 }
 
 nav{
-margin-top:10px;
+display:flex !important;
+flex-wrap:wrap !important;
+justify-content:center !important;
+gap:8px !important;
+margin-top:10px !important;
+}
+
+nav a{
+font-size:15px !important;
+margin:3px !important;
 }
 
 .hero{
-text-align:center;
-}
-
-.hero-content h1{
-font-size:30px;
-}
-
-.hero-content h2{
-font-size:22px;
+flex-direction:column !important;
+text-align:center !important;
+padding:40px 15px !important;
+gap:20px !important;
 }
 
 .big-logo{
-width:200px;
+width:180px !important;
+margin-bottom:20px !important;
+}
+
+.hero-content{
+max-width:100% !important;
+}
+
+.hero-content h1{
+font-size:32px !important;
+letter-spacing:2px !important;
+}
+
+.hero-content h2{
+font-size:18px !important;
+line-height:1.4 !important;
+white-space:normal !important;
+}
+
+.hero-content p{
+font-size:16px !important;
+line-height:1.6 !important;
+}
+
+.btn{
+display:block !important;
+width:220px !important;
+margin:10px auto !important;
+}
+
+.cards{
+flex-direction:column !important;
+align-items:center !important;
+}
+
+.card{
+width:90% !important;
+}
+
+.section-title{
+font-size:28px !important;
+}
+
+.contact{
+font-size:16px !important;
+padding:20px !important;
+}
+
+.whatsapp-float{
+right:15px !important;
+bottom:15px !important;
 }
 
 }
-
 </style>
 </head>
 
